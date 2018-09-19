@@ -1,0 +1,46 @@
+server:
+  port: 8080
+  tomcat:
+      uri-encoding: UTF-8
+  context-path: /springPoi
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost/test?useSSL=false&useUnicode=true&amp&characterEncoding=utf8
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+    initialSize: 5
+    maxActive: 20
+    minIdle: 1
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 25200000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxPoolPreparedStatementPerConnectionSize: 20
+    filters: stat,wall,log4j
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+    useGlobalDataSourceStat: true
+
+#上传配置
+  http:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
+
+# 日志配置
+logging:
+  level:
+    com.timothy.mapper: debug # 打印sql
+
+# mybatis 配置
+mybatis:
+  type-aliases-package: com.timothy.mapper
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations:
+  - classpath:mybatis/mapperXml/*.xml
