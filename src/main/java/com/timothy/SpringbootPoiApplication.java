@@ -9,7 +9,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringbootPoiApplication {
 
 	public static void main(String[] args) {
-		//测试
 		SpringApplication.run(SpringbootPoiApplication.class, args);
 	}
 }
