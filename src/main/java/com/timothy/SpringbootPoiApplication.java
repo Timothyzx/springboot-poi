@@ -9,7 +9,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringbootPoiApplication {
 
 	public static void main(String[] args) {
-		//我是fix
 		//我是20181106
 		SpringApplication.run(SpringbootPoiApplication.class, args);
 	}
