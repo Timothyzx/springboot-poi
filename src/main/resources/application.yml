@@ -27,18 +27,15 @@ spring:
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
     useGlobalDataSourceStat: true
 
-#上传配置
   http:
     multipart:
       max-file-size: 20MB
       max-request-size: 20MB
 
-# 日志配置
 logging:
   level:
-    com.timothy.mapper: debug # 打印sql
+    com.timothy.mapper: debug
 
-# mybatis 配置
 mybatis:
   type-aliases-package: com.timothy.mapper
   config-location: classpath:mybatis/mybatis-config.xml
