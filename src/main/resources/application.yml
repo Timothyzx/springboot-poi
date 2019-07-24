@@ -1,3 +1,4 @@
+##fix
 server:
   port: 8080
   tomcat:
@@ -27,18 +28,18 @@ spring:
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
     useGlobalDataSourceStat: true
 
-#ÉÏ´«ÅäÖÃ
+#ï¿½Ï´ï¿½ï¿½ï¿½ï¿½ï¿½
   http:
     multipart:
       max-file-size: 20MB
       max-request-size: 20MB
 
-# ÈÕÖ¾ÅäÖÃ
+# ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½ï¿½
 logging:
   level:
-    com.timothy.mapper: debug # ´òÓ¡sql
+    com.timothy.mapper: debug # ï¿½ï¿½Ó¡sql
 
-# mybatis ÅäÖÃ
+# mybatis ï¿½ï¿½ï¿½ï¿½
 mybatis:
   type-aliases-package: com.timothy.mapper
   config-location: classpath:mybatis/mybatis-config.xml
