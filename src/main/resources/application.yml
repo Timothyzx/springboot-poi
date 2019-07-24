@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8080  #ceshimerge
   tomcat:
       uri-encoding: UTF-8
   context-path: /springPoi
