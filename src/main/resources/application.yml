@@ -27,15 +27,18 @@ spring:
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
     useGlobalDataSourceStat: true
 
+#�ϴ�����
   http:
     multipart:
       max-file-size: 20MB
       max-request-size: 20MB
 
+# ��־����
 logging:
   level:
-    com.timothy.mapper: debug
+    com.timothy.mapper: debug # ��ӡsql
 
+# mybatis ����
 mybatis:
   type-aliases-package: com.timothy.mapper
   config-location: classpath:mybatis/mybatis-config.xml
